@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Donation Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="w3-panel w3-center" style="padding: 30px 16px;">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+        <a class="nav nav2" style="float:left" href="./index.html"> ← HOME </a>
+    </div>
+    <div class="w3-content" style="max-width:1500px">
+        <div class="w3-content" style="max-width:1500px; padding: 100px 0px 40px 0px">
+            <img src="./images/KTUHlogo.jpeg" style="width:200px; margin-bottom: 30px;">
+            <br>
+            <h1 style="color:black"><b>DONATION FORM </b></h1>
+        </div>
+        <form action="/process_donation" method="POST">
+            <h3 style="text-align: left; margin-left: 12%;">DONOR:</h3>
+            <div class="box">
+                <h6 style="text-align:left; padding-left: 20px;"><b>1.</b> Name:</h6>
+                <div class="row">
+                    <div class="column3" style="padding-left: 40px; text-align: left;">
+                        <h5 style="text-align:left">First Name:</h5>
+                        <input type="text" id="fname" name="fname" placeholder="First Name"
+                            style="width:90%; font-size:16px">
+                    </div>
+                    <div class="column3" style="padding-left: 40px; text-align: left;">
+                        <h5 style="text-align:left">Last Name:</h5>
+                        <input type="text" id="lname" name="lname" placeholder="Last Name"
+                            style="width:90%; font-size:16px">
+                    </div>
+                </div>
+                <h6 style="text-align:left; padding-left: 20px;"><b>2.</b> Contact:</h6>
+                <div class="row">
+                    <div class="column3" style="padding-left: 40px; text-align: left;">
+                        <h5 style="text-align:left">Email:</h5>
+                        <input type="text" id="email" name="email" placeholder="Email"
+                            style="width:90%; font-size:16px">
+                    </div>
+                    <div class="column3" style="padding-left: 40px; text-align: left;">
+                        <h5 style="text-align:left">Phone Number:</h5>
+                        <input type="text" id="phone" name="phone" placeholder="Phone Number"
+                            style="width:90%; font-size:16px">
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+            <h3 style="text-align: left; margin-left: 12%;">DONATION:</h3>
+            <div class="box">
+                <h6 style="text-align:left; padding-left: 20px;"><b>1.</b> Review premiums:</h6>
+                <div class="row">
+                    <div class="column">
+                        <h3><b>CENTURY PACKAGE</b></h3>
+                        <h5>Donations of $75 or more</h5>
+                        <img src="./images/Century.jpg" style="width:250px">
+                        <br>
+                        <br>
+                    </div>
+                    <div class="column2">
+                        <h3><b>OR</b></h3>
+                    </div>
+                    <div class="column">
+                        <h3><b>MILLENIUM PACKAGE</b></h3>
+                        <h5>Donations of $150 or more</h5>
+                        <img src="./images/Millenium.jpg" style="width:250px; padding-top:25px; padding-bottom: 18px;">
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <h6 style="text-align:left; padding-left: 20px;"><b>2.</b> Specify donation amount:</h6>
+                <div style="text-align:left; margin-left:30px;">
+                    <span style="font-size:20px; padding-right: 10px;">$</span><input type="text" id="damount"
+                        name="damount" placeholder="Enter donation amount" style="font-size:20px">
+                </div>
+                <br>
+                <h6 style="text-align:left; padding-left: 20px;"><b>3.</b> Choose T-shirt Size:</h6>
+                <div class="row" style="margin-left:20px">
+                    <div class="column4">
+                        <input type="radio" id="shirtsize" name="shirtsize" value="S">
+                        <h4>S</h4>
+                    </div>
+                    <div class="column4">
+                        <input type="radio" id="shirtsize" name="shirtsize" value="M">
+                        <h4>M</h4>
+                    </div>
+                    <div class="column4">
+                        <input type="radio" id="shirtsize" name="shirtsize" value="L">
+                        <h4>L</h4>
+                    </div>
+                    <div class="column4">
+                        <input type="radio" id="shirtsize" name="shirtsize" value="XL">
+                        <h4>XL</h4>
+                    </div>
+                    <div class="column4">
+                        <input type="radio" id="shirtsize" name="shirtsize" value="XL">
+                        <h4>2XL</h4>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+            <h3 style="text-align: left; margin-left: 12%;">SHIPPING:</h3>
+            <div class="box">
+                <h6 style="text-align:left; padding-left: 20px;"><b>1.</b> Recipient Name:</h6>
+                <div class="row" style="margin-left:20px">
+                    <div class="column4">
+                        <h5 style="text-align:left">Prefix:</h5>
+                        <select id="rprefix" name="rprefix" style="width:60%; font-size:16px">
+                            <option value="mr">MR.</option>
+                            <option value="ms">MS.</option>
+                            <option value="dr">DR.</option>
+                        </select>
+                    </div>
+                    <div class="column5" style="text-align:left">
+                        <h5 style="text-align:left">First Name:</h5>
+                        <input type="text" id="rfname" name="rfname" placeholder="First Name"
+                            style="width:90%; font-size:16px">
+                    </div>
+                    <div class="column5" style="text-align:left">
+                        <h5 style="text-align:left">Last Name:</h5>
+                        <input type="text" id="rlname" name="rlname" placeholder="Last Name"
+                            style="width:90%; font-size:16px">
+                    </div>
+                </div>
+                <h6 style="text-align:left; padding-left: 20px;"><b>2.</b> Shipping Address:</h6>
+                <h5 style="font-size:16px; text-align:left; padding-left: 10%;">Address Line 1:</h5>
+                <input type="text" id="shipaddress1" name="shipaddress1" placeholder="Address Line 1"
+                    style="width:80%; font-size:16px">
+                <h5 style="font-size:16px; text-align:left; padding-left: 10%;">Address Line 2:</h5>
+                <input type="text" id="shipaddress2" name="shipaddress2" placeholder="Address Line 2"
+                    style="width:80%; font-size:16px">
+                <div class="row">
+                    <div class="column2">
+                    </div>
+                    <div class="column6" style="text-align:left">
+                        <h5>City:</h5>
+                        <input type="text" id="shipcity" name="shipcity" placeholder="City"
+                            style="font-size:16px; width:90%;">
+                    </div>
+                    <div class="column4" style="text-align:left">
+                        <h5>State:</h5>
+                        <select id="shipstate" name="shipstate" style="font-size:18px; height:30px;">
+                            <option value="HI">HI</option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                    </div>
+                    <div class="column6" style="text-align:left">
+                        <h5>Zip Code:</h5>
+                        <input type="text" id="shipzip" name="shipzip" placeholder="Zip Code" style="font-size:16px">
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+            <h3 style="text-align: left; margin-left: 12%;">BILLING:</h3>
+            <div class="box">
+                <h6 style="text-align:left; padding-left: 20px;"><b>1.</b> Payment type:</h6>
+                <div class="row">
+                    <div class="column6">
+                        <input type="radio" id="cc" name="paytype" value="cc"><span style="margin-left:10px;">Credit
+                            Card</span>
+                    </div>
+                    <div class="column6">
+                        <input type="radio" id="check" name="paytype" value="check"><span
+                            style="margin-left:10px;">Check</span>
+                    </div>
+                    <div class="column6">
+                        <input type="radio" id="cash" name="paytype" value="cash"><span
+                            style="margin-left:10px;">Cash</span>
+                    </div>
+                </div>
+                <h6 style="text-align:left; padding-left: 20px;"><b>2.</b> Payment Info:</h6>
+                <p style="text-align:left; padding-left: 10%;"><b>If paying by credit card:</b></p>
+                <h5 style="font-size:16px; text-align:left; padding-left: 10%;">Card Number:</h5>
+                <input type="text" id="ccnumber" name="ccnumber" placeholder="Card Number"
+                    style="width:80%; font-size:16px">
+                <div class="row" style="margin-left:20px">
+                    <div class="column2">
+                    </div>
+                    <div class="column6" style="text-align:left">
+                        <h5 style="text-align:left">Exp:</h5>
+                        <span><input type="text" id="expmonth" name="expmonth" placeholder="MM"
+                                style="width:40%; font-size:16px">/<input type="text" id="expyear" name="expyear"
+                                placeholder="YY" style="width:40%; font-size:16px"></span>
+                    </div>
+                    <div class="column6" style="text-align:left">
+                        <h5 style="text-align:left">CVV:</h5>
+                        <input type="text" id="cvv" name="cvv" placeholder="CVV" style="width:90%; font-size:16px">
+                    </div>
+                </div>
+                <p style="text-align:left; padding-left: 10%;"><b>If paying by check:</b></p>
+                <h5 style="padding-left: 10%; text-align:left; padding-right:10%;"> Checks can be made payable to "KTUH
+                    Radio" and mailed to the following address:</h5>
+                <br>
+                <h6>Hemenway Hall</h6>
+                <h6>2445 Campus Rd #203</h6>
+                <h6>Honolulu, HI 96822</h6>
+                <p style="text-align:left; padding-left: 10%;"><b>If paying by cash:</b></p>
+                <h5 style="padding-left: 10%; text-align:left"> Cash can be mailed to the following address:</h5>
+                <br>
+                <h6>Hemenway Hall</h6>
+                <h6>2445 Campus Rd #203</h6>
+                <h6>Honolulu, HI 96822</h6>
+                <h6 style="text-align:left; padding-left: 20px;"><b>3.</b> Billing Address:</h6>
+                <div style="text-align:left; padding-left:10%;">
+                    <input type="checkbox" id="same" name="same" value="same"><span style="margin-left:10px;">Same as
+                        Shipping</span>
+                </div>
+                <h5 style="font-size:16px; text-align:left; padding-left: 10%;">Address Line 1:</h5>
+                <input type="text" id="billaddress1" name="billaddress1" placeholder="Address Line 1"
+                    style="width:80%; font-size:16px">
+                <h5 style="font-size:16px; text-align:left; padding-left: 10%;">Address Line 2:</h5>
+                <input type="text" id="billaddress2" name="billaddress2" placeholder="Address Line 2"
+                    style="width:80%; font-size:16px">
+                <div class="row">
+                    <div class="column2">
+                    </div>
+                    <div class="column6" style="text-align:left">
+                        <h5>City:</h5>
+                        <input type="text" id="billcity" name="billcity" placeholder="City"
+                            style="font-size:16px; width: 95%">
+                    </div>
+                    <div class="column4" style="text-align:left">
+                        <h5>State:</h5>
+                        <select id="billstate" name="billstate" style="font-size:18px; height:30px;">
+                            <option value="HI">HI</option>
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                    </div>
+                    <div class="column6" style="text-align:left">
+                        <h5>Zip Code:</h5>
+                        <input type="text" id="billzip" name="billzip" placeholder="Zip Code" style="font-size:16px">
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+
+            <br>
+            <input class="nav nav2" type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="notice">
+
+    </div>
+</body>
+
+</html>

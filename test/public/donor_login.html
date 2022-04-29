@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Donor Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="w3-panel w3-center" style="padding: 30px 16px;">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+        <a class="nav nav2" style="float:left" href="./index.html"> ← HOME </a>
+    </div>
+    <div class="w3-content" style="max-width:1500px">
+        <div class="w3-content" style="max-width:1500px; padding: 100px 0px 40px 0px">
+            <img src="/images/KTUHlogo.jpeg" style="width:200px; margin-bottom: 30px;">
+            <br>
+            <h1 style="color:black"><b>DONOR LOGIN </b></h1>
+        </div>
+        <div class="row" style="border: 2px solid black; border-radius: 8px; background-color: white;">
+            <br>
+            <div class="column" style="background-color:white; border-radius:8px">
+                <h3>LOGIN</h3>
+                <form action="/user_login">
+                    <br>
+                    <label for="username">Username:</label>
+                    <br>
+                    <input type="text" id="username" name="username">
+                    <br>
+                    <br>
+                    <label for="password">Password:</label>
+                    <br>
+                    <input type="text" id="password" name="password">
+                    <br>
+                    <br>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <div class="column2" style="background-color:white;">
+                <h2><b>OR</b></h2>
+            </div>
+            <div class="column" style="background-color:white; border-radius: 8px;">
+                <h3>CREATE ACCOUNT</h3>
+                <div class="row">
+                    <div class="column3" style="background-color:white">
+                        <form action="/create_account">
+                            <br>
+                            <label for="fname">First Name:</label>
+                            <br>
+                            <input type="text" id="fname" name="fname">
+                            <br>
+                            <br>
+                            <label for="demail">Email:</label>
+                            <br>
+                            <input type="text" id="email" name="email">
+                            <br>
+                            <br>
+                            <label for="username">Username:</label>
+                            <br>
+                            <input type="text" id="username" name="username">
+                            <br>
+                            <br>
+                            <label for="password">Password:</label>
+                            <br>
+                            <input type="text" id="password" name="password">
+                            <br>
+                    </div>
+                    <div class="column3" style="background-color:white">
+                        <br>
+                        <label for="lname">Last Name:</label>
+                        <br>
+                        <input type="text" id="lname" name="lname">
+                        <br>
+                        <br>
+                        <label for="phone">Phone Number:</label>
+                        <br>
+                        <input type="text" id="phone" name="phone">
+                        <br>
+                        <br>
+                        <label for="confirmuser">Confirm Username:</label>
+                        <br>
+                        <input type="text" id="confirmuser" name="confirmuser">
+                        <br>
+                        <br>
+                        <label for="confirmpswd">Confirm Password:</label>
+                        <br>
+                        <input type="text" id="confirmpswd" name="confirmpswd">
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <input type="submit" value="Create Account">
+                <br>
+                <br>
+                </form>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KTUH Radiothon Database</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="w3-panel w3-center" style="padding: 30px 16px; background-color:#353839">
+    <br>
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+        <a class="nav nav1" style="float:left" href="./index.html"> ← HOME </a>
+    </div>
+    <br>
+    <img src="./images/KTUHwhitelogo.png" style="width:150px; align-content: left;">
+    <br>
+    <br>
+    <h1 style="color:white; text-align:center;"><b>KTUH RADIOTHON DATABASE</b></h1>
+    <br>
+    <div style="text-align:left; padding-left: 30px;">
+        <h2 style="color:white; text-align:left"> <b>CREATE REPORT</b></h2>
+        <div class="side">
+            <h4 style="text-align:left">View All:</h4>
+            <form action="/action_page.php" style="text-align:left">
+                <select id="sreport" name="sreport" style="width:60%">
+                    <option value="annual">Donor Data</option>
+                    <option value="mail">Donation Data</option>
+                    <option value="summary">DJ Data</option>
+                </select>
+            </form>
+            <h4 style="text-align:left">Standard Reports:</h4>
+            <form action="/action_page.php" style="text-align:left">
+                <label for="sreport">Choose Report Type:</label>
+                <br>
+                <select id="sreport" name="sreport" style="width:60%">
+                    <option value="annual">Full Donor Report</option>
+                    <option value="mail">Mailing List</option>
+                    <option value="summary">Donation Summary</option>
+                </select>
+            </form>
+            <form action="/action_page.php" style="text-align:left">
+                <label for="sryear">By Year:</label><br>
+                <select id="sryear" name="sryear" style="width:60%">
+                    <option value="S2021">Spring 2021</option>
+                    <option value="F2021">Fall 2021</option>
+                    <option value="S2022">Spring 2022</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit">
+            </form>
+            <br>
+            <h4 style="text-align:left">Custom Reports:</h4>
+        </div>
+    </div>
+    <div class="data">
+        <div style="padding-top: 300px; padding-bottom: 300px;">
+            <h5 style="color:black">REPORT WILL APPEAR HERE</h5>
+        </div>
+    </div>
+</body>
