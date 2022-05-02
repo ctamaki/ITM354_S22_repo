@@ -8,7 +8,7 @@ var con = mysql.createConnection({
   host: '127.0.0.1',
   user: "ohana",
   port: 3306,
-  database: "ktuh",
+  database: "ktuhdb",
   password: "radio"
 });
 
@@ -33,7 +33,10 @@ function query_admin(POST, response) {
     var res_string = JSON.stringify(result);
     var res_json = JSON.parse(res_string);
     console.log(res_json);
-    if ((res_json.adminuser = adminuser)&&(res_json.adminpwd = adminpwd)) {
+    console.log(res_json[0].adminuser)
+    enteradminuser = res_json[0].adminuser
+    enteradminpwd = res_json[0].adminpwd
+    if ((enteradminuser = adminuser)&&(enteradminpwd = adminpwd)) {
       response.redirect('./database.html') 
     } else {
       console.log('Wrong username or password')
